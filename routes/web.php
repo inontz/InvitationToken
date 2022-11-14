@@ -16,3 +16,10 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+// Route::get('generate', function () {
+//     return view('index');
+// });
+
+Route::resource('invitation', 'App\Http\Controllers\HomePartyController');
